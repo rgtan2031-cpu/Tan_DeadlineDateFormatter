@@ -1,0 +1,16 @@
+from datetime import date
+
+event_title = input("Enter event title: ")
+year = int(input("Enter year: "))
+month = int(input ("Enter month: "))
+day = int(input("Enter day: "))
+
+deadline= date(year,month,day)
+
+print("\nFormatted Output:")
+print(f"Event: {event_title.upper()}")
+print(f"Date: {deadline.strftime('%B')} {deadline.day}, {deadline.year}")
+print(f"Year: {deadline.year}")
+print(f"Month: {deadline.strftime('%B')}")
+print(f"Day: {deadline.day}")
+print(f"Weekday: {deadline.strftime('%A')}")
